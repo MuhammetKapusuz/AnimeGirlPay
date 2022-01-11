@@ -1,0 +1,108 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pls card number ( ◡‿◡ *)</title>
+	<link rel="shortcut icon" href="waifu.png" type="image/png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="credit.css" />
+</head>
+
+<body>
+	<h1>Anime Kızını Görmek İçin Kart Bilgilerini Bize Gönder ( ◡‿◡ *)</h1>
+	<main class="box">
+		<div class="anime-girl">
+			<img src="waifu.png" alt="Beni Sev UWU" onmouseover="AnimeGirlSound()" onclick="AnimeGirlClick()">
+			<audio id="onniichan">
+				<source src="onniichan.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="nyaa">
+				<source src="nyaa.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="yayy">
+				<source src="yayy.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="yes">
+				<source src="yes.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="ohayo">
+				<source src="ohayo.mp3" type="audio/mpeg">
+			</audio>
+			<audio id="bang">
+				<source src="bang.mp3" type="audio/mpeg">
+			</audio>
+		</div>
+		<div class="payment-box">
+			<div class="card-number">
+				<h4 class="head-name">Kart Numaranı Yazar mısın :3</h4>
+				<input type="text" name="credit_card_number" class="credit" inputmode="numeric" />
+			</div>
+			<div class="card-password">
+				<h4 class="head-name">Kart Şifreni Girermisin UWU</h4>
+				<input type="text" placeholder="Şifre" name="credit_card_password_number" class="credits"
+					inputmode="numeric" maxlength="4" onkeypress="return isNumberKey(event)" />
+			</div>
+			<div class="card-name">
+				<h4 class="head-name">İsmini Bana Bahşedermisin Senpai</h4>
+				<input type="text" placeholder="Ad Soyad" name="credit_card_name" class="credits"
+					onkeypress="return isStringKey(event)" />
+			</div>
+			<div class="payment-box-bottom">
+				<div class="card-cvv">
+					<h4 class="head-name">Arkadaki numaralar... ne yazıyor?</h4>
+					<input type="text" placeholder="CVV" name="mini-credit_card_cvv" class="credits" maxlength="3"
+						inputmode="numeric" onkeypress="return isNumberKey(event)" />
+				</div>
+				<div class="card-date">
+					<h4 class="head-name">Süresi ne zaman bitiyor owo</h4>
+					<select placeholder="Ay" name="mini-credit_card_date_month" class="credits opt">
+						<option value="jan 1" class="card_opt">1</option>
+						<option value="feb 2" class="card_opt">2</option>
+						<option value="mar 3" class="card_opt">3</option>
+						<option value="apr 4" class="card_opt">4</option>
+						<option value="may 5" class="card_opt">5</option>
+						<option value="june 6" class="card_opt">6</option>
+						<option value="july 7" class="card_opt">7</option>
+						<option value="aug 8" class="card_opt">8</option>
+						<option value="sep 9" class="card_opt">9</option>
+						<option value="oct 10" class="card_opt">10</option>
+						<option value="nov 11" class="card_opt">11</option>
+						<option value="dec 12" class="card_opt">12</option>
+					</select>
+					<span id="slash">/</span>
+					<select placeholder="Yıl" name="mini-credit_card_date_year" class="credits opt">
+						<option value="2022" class="card_opt">2022</option>
+						<option value="2023" class="card_opt">2023</option>
+						<option value="2024" class="card_opt">2024</option>
+						<option value="2025" class="card_opt">2025</option>
+						<option value="2026" class="card_opt">2026</option>
+						<option value="2027" class="card_opt">2027</option>
+						<option value="2028" class="card_opt">2028</option>
+						<option value="2029" class="card_opt">2029</option>
+						<option value="2030" class="card_opt">2030</option>
+						<option value="2031" class="card_opt">2031</option>
+						<option value="2032" class="card_opt">2032</option>
+					</select>
+				</div>
+				<div class="send">
+					<button type="submit" onclick="Arigatou()" class="btn-send">Arigatou senpai!</button>
+					<audio id="ArigatouSound">
+						<source src="Arigato.mp3" type="audio/mpeg">
+					</audio>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="credit.js"></script>
+	<script type="text/javascript">
+		jQuery(function ($) {
+			$(".credit").credit();
+		});
+	</script>
+</body>
+
+</html>

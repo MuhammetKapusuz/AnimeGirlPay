@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700;900&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+	line-height: 1;
+    font-family: 'Roboto Slab', serif;
+    background-color: #fac3fb;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+main.box{
+    width: 800px;
+    height: 500px;
+    padding-top: 20px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-color: #f985fd;
+    border-radius:20px;
+    box-shadow: 0px 0px 100px #f76cfb;
+}
+.anime-girl{
+    cursor: help;
+}
+.anime-girl img{
+    width: 325px;
+    height: auto;
+}
+h4.head-name{
+    margin-bottom: 10px;
+}
+input[name^="credit"]{
+    display: block;
+    width: 428px;
+	height: 44px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+input.credits:focus{
+    border-color: #e566e9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+input[name^="mini-credit"]{
+    display: block;
+    width: 58px;
+	height: 20px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+div[class^="card"]{
+    margin-bottom: 10px;
+    padding: 6px 12px;
+}
+.card-date,.card-cvv{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+select[class="credits opt"]{
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+select[class="credits opt"]:focus{
+    border-color: #e566e9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+option[class="card_opt"]{
+    background-color: #fff;
+    color: #555;
+}
+span#slash{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 200;
+    color: #555;
+}
+.send{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button.btn-send{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 20px;
+    padding: 10px;
+    background-color: #e566e9;
+    border-radius:20px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border: 2px solid #e566e9;
+    text-align: center;
+}
+button.btn-send:hover{
+    background-color: #d752db;
+}
+button.btn-send:focus{
+    border: 2px solid #b53fb9;
+}
