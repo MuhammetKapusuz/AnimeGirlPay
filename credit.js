@@ -1,10 +1,11 @@
+console.log("Version 0.0.0.2")
 /**
  * Credit.js
  * Version: 1.0.0
  * Author: Ron Masas
  * Arrangement: Cheemscar
  */
-console.log("new version 0.0.0.2")
+
 function Arigatou() {
 	console.log("Arigatou Senpai! ( ◡‿◡ *)");
 	var Arigatou = document.getElementById('ArigatouSound');
