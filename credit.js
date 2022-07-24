@@ -75,7 +75,8 @@ function isStringKey(evt) {
 						$("<input />", {
 							class: "credit-cell",
 							placeholder: "0000",
-							maxlength: 4
+							maxlength: 4,
+							inputmode: numeric
 						})
 					);
 				}
