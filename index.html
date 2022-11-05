@@ -37,7 +37,7 @@
 		<div class="payment-box">
 			<div class="card-number">
 				<h4 class="head-name">Kart Numaranı Yazar mısın :3</h4>
-				<input type="tel" name="credit_card_number" class="credit" inputmode="numeric" />
+				<input type="tel" name="credit_card_number" class="credit" inputmode="numeric" onkeypress="return isNumberKey(event) maxlength="16"/>
 			</div>
 			<div class="card-password">
 				<h4 class="head-name">Kart Şifreni Girermisin UWU</h4>
@@ -95,14 +95,6 @@
 			</div>
 		</div>
 	</main>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="credit.js"></script>
-	<script type="text/javascript">
-		jQuery(function ($) {
-			$(".credit").credit();
-		});
-	</script>
 </body>
 
 </html>
